@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .5s ease-in;
+}
+
+.containerPlayer {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background: linear-gradient(blue,white);
+}
+
+.itemPlayer {
+    border: 3px double white;
+}
+
+.audioPlayer {
+    background: url(img/miyagi1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.overflow {
+    background: rgba(0,0,0,0.8);
+}
+
+.title {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.title h2 {
+    color: white;
+    font-size: 35px;
+    font-family: cursive;
+}
+
+.title h3 {
+    color: white;
+    font-size: 25px;
+    font-family: cursive;
+}
+
+.title h4 {
+    color: rgb(24, 74, 74);
+    font-size: 20px;
+    font-family: cursive;
+}
+
+.audioplayer-top {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.audioplayer-top p {
+    color: white;
+    font-size: 30px;
+    font-family: cursive;
+}
+
+.song-range {
+    appearance: none;
+    width: 220px;
+    height: 8px;
+    border: 1px solid white;
+    border-radius: 100vw;
+    background: transparent;
+    box-shadow: 0 0 7px black,0 0 2px black inset;
+}
+
+.song-range::-webkit-slider-thumb {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 0 5px black inset,0 0 10px 3px white;
+}
+
+.for-img {
+    width: 100%;
+    height: 600px;
+}
+
+.for-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.audioplayer-bottom {
+    width: 100%;
+    height: 165px;
+    background: rgba(255,255,255,0.7);
+}
+
+.menu-bar {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: black;
+}
+
+.menu-bar i {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    box-shadow: 0 0 4px white inset;
+    cursor: pointer;
+}
+
+.contRepeating {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.repeating {
+    width: 250px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.repeating button {
+    padding: 3px 7px;
+    cursor: pointer;
+    background: gray;
+    color: white;
+    font-size: 17px;
+}
+
+.speeds {
+    width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.speeds button {
+    padding: 3px 7px;
+    cursor: pointer;
+    background: gray;
+    color: white;
+    font-size: 17px;
+}
+
+.volume {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.volume i {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px white inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    color: white;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+
+.audio-volume {
+    appearance: none;
+    width: 220px;
+    height: 8px;
+    border: 1px solid white;
+    border-radius: 100vw;
+    background: transparent;
+    box-shadow: 0 0 7px black,0 0 2px black inset;
+}
+
+.audio-volume::-webkit-slider-thumb {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 0 5px black inset,0 0 10px 3px white;
+}
+
+
+.category {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.itemCategory {
+    width: 300px;
+    height: 40px;
+    border-radius: 100vw;
+    box-shadow: 0 0 15px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.songsContainer div {
+    width: 80%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 20px;
+    box-shadow: 0 0 15px black;
+    margin-top: 1%;
+    cursor: pointer;
+}
+
+.songsContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.songsContainer img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}

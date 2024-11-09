@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="containerPlayer">
+        <div class="category itemPlayer">
+            <div class="itemCategory" data="1">Rap</div>
+            <div class="itemCategory" data="2">France</div>
+            <div class="itemCategory" data="3">Pop</div>
+            <div class="itemCategory" data="4">Rock</div>
+        </div>
+        <div class="audioPlayer itemPlayer">
+            <div class="overflow">
+                <audio src="" id="audio"></audio>
+                <div class="title">
+                    <h2 class="namePerson">Miyagi</h2>
+                    <h3 class="nameSong">Hajime</h3>
+                    <h4 class="nameCategory">Rap</h4>
+                </div>
+                <div class="audioplayer-top">
+                    <p class="song-time">00:00</p>
+                    <input type="range" class="song-range" value="0" max="100">
+                    <p class="song-duration">00:00</p>
+                </div>
+                <div class="for-img">
+                    <img src="img/miyagi1.jpg" alt="">
+                </div>
+                <div class="audioplayer-bottom">
+                    <div class="menu-bar">
+                        <i class="fa fa-undo undoSecond"></i>
+                        <i class="fa fa-backward prev"></i>
+                        <i class="fa fa-play play-pause"></i>
+                        <i class="fa fa-forward next"></i>
+                        <i class="fa fa-repeat undoFirst"></i>
+                    </div>
+                    <div class="contRepeating">
+                        <div class="repeating">
+                            <button class="startRepeat">A</button>
+                            <button class="endRepeat">B</button>
+                            <button class="offRepeat">OFF</button>
+                        </div>
+                        <div class="speeds">
+                            <button>0.25</button>
+                            <button>0.5</button>
+                            <button>1</button>
+                            <button>1.25</button>
+                            <button>1.5</button>
+                        </div>
+                    </div>
+
+
+                    <div class="volume">
+                        <i class="fa fa-volume-up volumeUp"></i>
+                        <input type="range" value="50" max="100" class="audio-volume">
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="songsContainer itemPlayer"></div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
